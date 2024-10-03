@@ -1,5 +1,5 @@
 body{
-background-color:chocolate;
+background-color:yellow;
 }
 h1 {
     color: red;
@@ -10,4 +10,25 @@ h1 {
     color: blue;
     font-size: 45px;
     font-family: Arial, sans-serif;
+  }
+  
+    .ibm-plex-mono-thin {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 100;
+      font-size: 75px;
+      font-style: normal;
+    }
+    .glitch {
+      position: relative;
+      color: white;
+      font-size: 3em;
+      animation: glitch 1s infinite;
+  }
+  
+  @keyframes glitch {
+      45% { text-shadow: 45px 0 red, -20px 0 blue; }
+      69% { text-shadow: -56px 0 red, 56px 0 blue; }
+      40% { text-shadow: 12px 0 red, -34px 0 blue; }
+      60% { text-shadow: -1px 0 red, 1px 0 blue; }
+      100% { text-shadow: 24px 0 red, -1px 0 blue; }
   }
