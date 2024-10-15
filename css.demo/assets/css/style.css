@@ -1,4 +1,8 @@
 /*-----css-demo-----*/
+/* ---- Color Scheme ----
+Main Color - #3C853A
+*/
+
 /*  ---------------Box Sizing-----------------  */
 
 html {
@@ -10,23 +14,85 @@ html {
     box-sizing: inherit;
   }
 
-  body{
+  body {
     background-color: lightpink;
     font-size: 17px;
     font-family: "Oswald", sans-serif;
   }
 
-  main{
+  /* 
+  main {
 
   }
+  */
 
-  header.primary{
+  header.primary {
     background-color: lightseagreen;
     color: #ffffff;
     text-align: center;
     font-size: 23px;
-    text-shadow:2px 13px #000000;
+    text-shadow:2px 1px #000000;
+    
+    /* Single value short hand */
+    padding: 40px;
+    /* T, R, B< L */
+    padding: 20px 40px 20px 40px;
+    /* Two values Top/Bottom / L/R */
+    padding: 20px 40px;
+  }
+
+  header.primary h1 {
+    background-color: red;
+    font-size:2.4rem;
+    /* top | left and right | bottom */
+    margin: 20px 0 0;
+  }
+  
+  header.primary h1 a {
+    color:#ffffff;
+    text-decoration:none;
+  }
+  
+  header.primary h2 {
+    font-size:1.3rem;
+    /* margin:*/
+  }
+
+  header.primary nav {
     
   }
   
+  header.primary nav ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:10px 0;
+  }
+
+  header.primary nav ul li {
+    list-style-type:none;
+  }
+
+  header.primary nav ul li a {
+    color:#ffffff;
+    text-decoration:none;
+    border:1px solid #000000;
+    padding: 7.5px 10px;
+    background-color: rgba(0,0,0,.4);
+    border-radius:20px;
+  }
+
+  header.primary nav ul li a:hover {
+    background-color: rgba(0,0,0, .8);
+    transition:.4s;
+  }
+  
+
+
+  /* -----Media Queries--------*/
+  @media screen and (max-width: 560px) {
+    flex-direction:column;
+    gap:25px;
+
+  }
   
