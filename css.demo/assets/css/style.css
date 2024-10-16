@@ -14,6 +14,12 @@ html {
     box-sizing: inherit;
   }
 
+  /*  ---------------Responsive Images----------------  */
+img {
+  max-width: 100%;
+}
+
+
 /*  ---------------Utility Classes-----------------  */
 
   .container{
@@ -107,8 +113,41 @@ body {
   #content h2 {
     color: #3b638b;
     border-bottom: 3px solid darkgrey
+  } 
+
+  #blog {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 2rem;
   }
 
+  #blog article.post {
+    box-shadow: 0 4px 8px rgba(0,0,0, .6);
+    padding: 10px;
+    border-radius:4px;
+    font-size: .8rem;
+    transition:.4s;
+  }
+ 
+  #blog article.post:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0, .6);
+  }
+
+  #blog figure{
+    margin:0;
+  }
+  
+  #blog figcaption, time.post-date {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    text-align: center;
+    color: black;
+  }
+
+  #blog.post a{
+    color: lightseagreen;
+  }
   /* -----Media Queries--------*/
   @media screen and (max-width: 560px) {
     
