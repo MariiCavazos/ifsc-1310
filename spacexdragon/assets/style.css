@@ -1,217 +1,198 @@
-/* General Reset */
 /*
 Color Theme
- Insert Color numbers
+ #000000
+ #ffffff
 */
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
 /* ---------------Box Sizing----------------- */
-body, h1, h2, h3, p, ul, li, a {
+  *,
+  *::before,
+  *::after {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Orbitron', sans-serif; /* Futuristic font */
-    background-color: #0d1117; /* Deep space black */
-    color: #c9d1d9; /* Soft white text */
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
-}
-.replace-scott {
-    width: 264px;
-    height: 106px;
-    background: url("assets");
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
   }
+/* ---------------Utility Styles----------------- */
 
-/* Header */
-header.primary h1 {
-    font-size: 3.2rem;
-    margin: 20px 0;
+/* ---------------Responsive Images----------------- */
+
+.overview {
     position: relative;
-}
-
-header.primary h1 a {
+    height: 60vh;
+    background-image: url('img/dragoncrew.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px;
     color: #ffffff;
-    background-image:();
-    display: block;
-    width: 450px;
-    height: 70px;
-    margin: 0 auto;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
-
-#main-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#main-header .logo {
-    max-width: 200px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0 0 5px #61dafb); /* Glowing logo */
-}
-
-#main-header h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: #61dafb;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb;
-}
-
-#main-header .subtitle {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #8b949e;
-}
-
-/* Navigation */
-#main-nav {
-    margin-top: 15px;
-}
-
-#main-nav .nav-links {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-}
-
-#main-nav .nav-links a {
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #c9d1d9;
-    padding: 10px 15px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, #61dafb 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-}
-
-#main-nav .nav-links a:hover,
-#main-nav .nav-links .active {
-    background-position: 0 0;
-    border: 1px solid #61dafb;
-    color: #0d1117;
-    background-color: #61dafb;
-    box-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb;
-}
-
-/* Main Content */
-main {
-    padding: 50px 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Overview Section */
-#overview {
-    margin-bottom: 50px;
-}
-
-#overview h2 {
-    font-size: 2rem;
-    color: #61dafb;
-    text-shadow: 0 0 5px #61dafb;
-    margin-bottom: 20px;
-}
-
-#overview p {
-    font-size: 1.1rem;
-    color: #8b949e;
-    margin-bottom: 15px;
-}
-
-/* Configurations Section */
-#configurations {
-    margin-bottom: 50px;
-}
-
-#configurations h2 {
-    font-size: 2rem;
-    color: #61dafb;
-    text-shadow: 0 0 5px #61dafb;
-    margin-bottom: 20px;
-}
-
-.config-block {
-    margin-bottom: 30px;
+.black-box {
+    position: absolute; /* Position it at the bottom left */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    background: linear-gradient(145deg, #1c2128, #242b33);
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1),
-                0 2px 6px rgba(0, 0, 0, 0.8),
-                0 -2px 6px rgba(0, 0, 0, 0.2);
+    width: 70%; /* Box width (optional, adjust as needed) */
+    max-width: 900px;
 }
 
-.config-block h3 {
-    font-size: 1.5rem;
-    color: #61dafb;
-    margin-bottom: 15px;
+/* Style for h1 inside black-box */
+.black-box h1 {
+    margin: 0;
+    font-weight: 400; /* Semi-bold font weight */
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 2.5rem; /* Adjust size of the title */
 }
 
-.config-block ul {
-    padding-left: 20px;
+/* Style for h2 inside black-box */
+.black-box h2 {
+    margin: 0;
+    font-weight: 400; /* Semi-bold font weight */
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 1.5rem; /* Adjust size of the subtitle */
+    margin-top: 20px; /* Space between h1 and h2 */
 }
 
-.config-block li {
-    color: #8b949e;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+.overview-description {
+    padding: 40px 20px; /* Add padding around the text */
+    background-color: #000; /* White background for the description section */
+    color: #ffffff; /* Black text */
 }
 
-/* Footer */
-#main-footer {
-    background: #161b22;
-    padding: 20px 0;
-    text-align: center;
-    color: #8b949e;
-    font-size: 0.9rem;
-    border-top: 2px solid #21262d;
+.overview-description h2 {
+    font-size: 2rem; /* Adjust font size for the section title */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
-#main-footer a {
-    color: #61dafb;
-    transition: color 0.3s;
+.overview-description p {
+    font-size: 1rem; /* Adjust font size for the paragraphs */
+    line-height: 1.6; /* Improve line spacing for readability */
+    margin-bottom: 15px; /* Add space between paragraphs */
+}
+/* ---------------Content----------------- */
+.section {
+position: absolute;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
 }
 
-#main-footer a:hover {
-    color: #8b949e;
+/* ---------------Global Styles----------------- */
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: #000;
+    color: #ffffff;
+    padding-top: 80px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #main-nav .nav-links {
-        flex-direction: column;
-    }
-
-    #main-nav .nav-links a {
-        text-align: center;
-    }
-
-    #main-header h1 {
-        font-size: 2rem;
-    }
-
-    #overview h2,
-    #configurations h2 {
-        font-size: 1.8rem;
-    }
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
+
+ul {
+    list-style: none;
+}
+
+/* ---------------Header----------------- */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    height: 100px;
+    padding: 0px 20px;
+    z-index: 1000;
+}
+
+#main-nav {
+    margin-right: 50px;
+}
+
+#main-nav ul {
+    display: flex;
+}
+#main-nav ul li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+/* ---------------Articles----------------- */
+/* ---------------Logo----------------- */
+.logo {
+    width: 210px;
+    height: auto;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* ---------------Nav Border----------------- */
+#main-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1)
+
+}
+
+#main-nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-duration: 0.4s;
+}
+
+/* ---------------Hero----------------- */
+
+/* ---------------Aside----------------- */
+
+/* ---------------Footer----------------- */
+footer {
+    position: relative;
+    padding: 55px 0;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    margin-right: 30px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 2.5;
+  }
+  
+  footer a {
+    color: #fff;
+    transition: color 0.6s;
+  }
+  
+  footer a:hover {
+    color: #aaa;
+  }
+  
+
+/* ---------------Media Queries----------------- */
