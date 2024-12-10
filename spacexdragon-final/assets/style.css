@@ -1,0 +1,429 @@
+/*
+Color Theme
+ #000000
+ #ffffff
+*/
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+/* ---------------Box Sizing----------------- */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* ---------------Utility Styles----------------- */
+.history-section {
+    text-align: left;
+    padding: 50px 20px;
+}
+
+.history-section h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.history-table th, .history-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.history-table th {
+    background-color: #222;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.history-table tr:nth-child(even) {
+    background-color: #333;
+}
+
+.history-table tr:hover {
+    background-color: #444;
+}
+
+.history-table td {
+    font-size: 1rem;
+    color: #ddd;
+    border-bottom: 1px solid #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .history-table th, .history-table td {
+        padding: 10px;
+    }
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px; 
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 10px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ---------------Footer----------------- */
+#main-footer {
+    position: relative;
+    padding: 55px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 2.5;
+}
+
+#main-footer a {
+    color: #fff;
+    transition: color 0.6s;
+    margin: 0 10px; /* Add spacing between links */
+}
+
+#main-footer a:hover {
+    color: #aaa;
+}
+
+
+/* ---------------Responsive Images----------------- */
+
+
+.overview {
+    position: relative;
+    height: 60vh;
+    background-image: url('img/dragoncrew.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    color: #ffffff;
+}
+
+
+.black-box { 
+    position: absolute; /* Position it at the bottom left */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+    width: 70%; /* Box width (optional, adjust as needed) */
+    max-width: 900px;
+}
+
+
+/* Style for h1 inside black-box */
+.black-box h1 {
+    margin: 0;
+    font-weight: 400; /* Semi-bold font weight */
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 2.5rem; /* Adjust size of the title */
+}
+
+
+/* Style for h2 inside black-box */
+.black-box h2 {
+    margin: 0;
+    font-weight: 400; /* Semi-bold font weight */
+    text-transform: uppercase; /* Make text uppercase */
+    font-size: 1.5rem; /* Adjust size of the subtitle */
+    margin-top: 20px; /* Space between h1 and h2 */
+}
+
+.overview-description {
+    padding: 20px 15px; /* Consistent padding */
+}
+
+.overview-description h3 {
+    font-size: 1.8rem; /* Consistent large heading size */
+    margin-top: 12px; /* Consistent spacing */
+    margin-bottom: 20px; /* Consistent spacing */
+}
+
+.overview-development h3,
+.overview-reusability h3 {
+    padding: 20px 15px; /* Consistent padding */
+    font-size: 1.8rem; /* Consistent medium heading size */
+    margin-top: 12px; /* Consistent spacing */
+    margin-bottom: 2px; /* Consistent spacing */
+}
+
+.overview-development p,
+.overview-reusability p {
+    padding: 5px 20px;
+    font-size: 1rem; /* Adjust font size for the paragraphs */
+    line-height: 1.6; /* Improve line spacing for readability */
+    margin-bottom: 5px; /* Add space between paragraphs */
+}
+/* ---------------Content----------------- */
+.section {
+position: absolute;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+
+/* ---------------Global Styles----------------- */
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    background: #000;
+    color: #ffffff;
+    padding-top: 80px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+/* ---------------Header----------------- */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    height: 100px;
+    padding: 0px 20px;
+    z-index: 1000;
+}
+
+
+#main-nav {
+    margin-right: 50px;
+}
+
+
+#main-nav ul {
+    display: flex;
+}
+#main-nav ul li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+
+/* ---------------Articles----------------- */
+/* ---------------Logo----------------- */
+.logo {
+    width: 210px;
+    height: auto;
+}
+
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* ---------------Nav Border----------------- */
+#main-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+
+#main-nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-duration: 0.4s;
+}
+#configurations {
+    text-align: center; /* Centers the section title */
+    padding: 50px 20px;
+}
+
+
+#configurations h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+
+/* Config row will align boxes in a row */
+.config-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    gap: 200px; /* Space between boxes */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+
+/* Each config box style */
+.config-box {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    text-align: center; /* Center-align text */
+    margin-bottom: 30px; /* Spacing between rows */
+    padding: 20px;
+    border-radius: 10px; /* Matches the image corners for a clean look */
+   
+    width: 100%; /* Ensures uniform width */
+    max-width: 350px; /* Optional: Limits the size for responsive design */
+}
+
+.config-image {
+    width: 100%; /* Ensures the image fills its parent container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio while cropping excess */
+    display: block; /* Removes any inline spacing issues */
+    border-radius: 8px; /* Optional for consistent rounded corners */
+}
+
+.config-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds consistent spacing between items */
+    justify-co
+
+.config-box h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.config-box p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+/* Styling the images within each box */
+.config-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .config-box {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+
+/* Config row will align boxes in a row */
+.config-row {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    gap: 20px; /* Space between boxes */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+
+/* Each config box style */
+.config-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Set to 30% to fit 3 boxes in a row */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.config-box h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+.config-box p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+/* Styling the images within each box */
+
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .config-box {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+/* ---------------Hero----------------- */
+
+
+/* ---------------Aside----------------- */
+
+
