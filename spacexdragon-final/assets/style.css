@@ -311,7 +311,7 @@ ul {
 .config-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0;
     margin-bottom: 15px; 
 }
 
